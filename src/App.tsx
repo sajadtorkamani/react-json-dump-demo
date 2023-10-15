@@ -1,4 +1,4 @@
-import { Dump } from '../../../src/Dump.tsx'
+import { Dump } from 'react-json-dump'
 
 function App() {
   const person = {
@@ -21,8 +21,13 @@ function App() {
   return (
     <>
       <h1>Example: Vite</h1>
-      <Dump value={person} />
 
+      <section style={{ marginBottom: '32px' }}>
+        <h3>With default 'Dump' label</h3>
+        <Dump value={person} />
+      </section>
+
+      <h3>With custom label</h3>
       <Dump label="Person" value={person} />
     </>
   )
