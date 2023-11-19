@@ -28,7 +28,7 @@ function App() {
       </section>
 
       <h3>With custom label</h3>
-      <Dump label="Person" value={person} />
+      <Dump value={person} />
     </>
   )
 }
